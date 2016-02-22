@@ -62,9 +62,59 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
     resume below. You can pretty easily figure out what each section will
     display by looking at the id or at what's written between the <h2> tags.
     -->
-    <div id="header" class="center-content clear-fix container">
-      <ul id="topContacts" class="flex-box"></ul>
-    </div>
+    <header class="container">
+    	
+    	<div class="row">
+    		<div id="header" class="col-md-12 text-right text-middle">
+    	  </div>
+      </div>
+      
+    	<div class="row">
+        <div class="col-md-12">
+    			<nav class="navbar navbar-default">
+            <div class="container-fluid">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse-1" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+              </div>
+              <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
+                <ul class="nav nav-justified">
+                  <li class="active"><a href="#">Bio<span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="active"><a href="#">Projects<span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="active"><a href="#">References<span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="active"><a href="#">Links<span class="sr-only">(current)</span></a>
+                  </li>
+                  </ul>
+              </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+          </nav> 	    			
+          
+        </div>
+      </div> 
+      
+      <div class="row">
+    		<div class="col-md-12">
+          <ul id="topContacts" class="flex-box"></ul>
+          <hr>
+        </div>
+      </div>
+      
+      <div class="row">
+    		<div id="skills-row" class="col-md-12">
+    	  </div>
+      </div>    
+    </header>
+    
     
     
     <section class="container">
@@ -91,7 +141,7 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
     
     <section class="container">
     	<div class="row">
-        <div id="mapDiv" class="col-md-12">
+        <div id="mapDiv">
     	    <h2>Where I've Lived and Worked</h2>
         </div>
       </div>     
@@ -100,8 +150,9 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
     
     <footer id="lets-connect" class="dark-gray container">
       <h2 class="center-text">Let's Connect</h2>
-        <ul id="footerContacts" class="flex-box">
-      </ul>
+      <hr>
+        <ul id="footerContacts" class="flex-box"></ul>
+      <hr>
     </footer>
   </div>
 

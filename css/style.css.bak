@@ -9,8 +9,7 @@ h3,
 h4,
 h5,
 h6 {
-  padding:0;
-  margin:0;
+ 
   font-family: "Roboto", sans-serif;
 }
 
@@ -27,16 +26,15 @@ h6 {
 h1 {
   font-size: 40px;
   color: #5f9ea0;
-  line-height: 48px;
-  display: inline;
+  line-height: 48px;  
+  
 }
 
 h2 {
   font-weight: bold;
   font-size: 24px;
   color: #999;
-  line-height: 29px;
-  padding: 10px;
+  line-height: 29px;  
 }
 
 h3 {
@@ -44,6 +42,7 @@ h3 {
   font-size: 20px;
   color: #000;
   line-height: 22px;
+  margin-top: 10px;
 }
 
 h4 {
@@ -51,14 +50,6 @@ h4 {
   font-size: 14px;
   color: #4a4a4a;
   line-height: 17px;
-}
-
-h2,
-h3,
-h4,
-h5 {
-  padding:10px 5%;
-
 }
 
 
@@ -88,7 +79,7 @@ p {
 a {
   color: #1199c3;
   text-decoration: none;
-  margin-top: 10px;
+  /*margin-top: 10px;*/
   display: block;
 }
 
@@ -119,7 +110,7 @@ a {
 .gray {
   background-color: #f3f3f3;
   padding-bottom: 10px;
-  clear:both;
+  /*clear:both;*/
 }
 
 .dark-gray {
@@ -127,8 +118,14 @@ a {
 }
 
 /* TODO: Replace with image later */
+header,
+.header,
 #header {
   background-color: #484848;
+}
+
+#header {
+  vertical-align: middle;
 }
 
 .flex-box {
@@ -144,12 +141,17 @@ a {
   padding: 2.5% 5%;
 }
 
-ul {
-  list-style-type: none;
+#topContacts {
+  margin-top: 10px;  
 }
 
 li {
 	font-weight: bold;
+}
+
+hr {
+	margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .biopic {
@@ -165,6 +167,12 @@ img {
 
 span {
   padding: 5px;
+}
+
+.navbar {    
+    min-height: 0px;
+    background-color: lightgray;
+    margin-bottom: 0px;
 }
 
 #lets-connect {

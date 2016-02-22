@@ -16,20 +16,28 @@ var bio = {
   	'Software Management', 
   	'Business Analysis', 
   	'ITIL Governance', 
-  	'Supply Chain Management'
+  	'Supply Chain Management',
+  	'ITIL Governance', 
+  	'C#', 
+  	'JavaScript', 
+  	'jQuery',
+  	'SQL'
   ],
   bioPic : 'images/me.png',
      
   display : function () {
   	//build BIO in header
     
+    var formattedWelcomeMsg = HTMLwelcomeMsg.replace('%data%', bio.welcomeMessage);
+    $('#header').prepend(formattedWelcomeMsg);
     var formattedRole = HTMLheaderRole.replace('%data%', bio.role);
     formattedRole = formattedRole.replace('span', 'h2');
-    $('#header').prepend(formattedRole);
+    $('#header').prepend(formattedRole);    
     var formattedName = HTMLheaderName.replace('%data%', bio.name);
     $('#header').prepend(formattedName);   
-    
-    
+     var formattedBioPic = HTMLbioPic.replace('%data%', bio.bioPic);
+    $('#header').prepend(formattedBioPic);
+        
     function displayContacts(htmlID) {
     	
       var formattedMobile = HTMLmobile.replace('%data%', bio.contacts.mobile);
@@ -41,18 +49,11 @@ var bio = {
       var formattedLocation = HTMLlocation.replace('%data%', bio.contacts.location);
       $(htmlID).append(formattedLocation);
     }
-    
     displayContacts('#topContacts');
     
-    var formattedBioPic = HTMLbioPic.replace('%data%', bio.bioPic);
-    $('#header').append(formattedBioPic);
-    
-    var formattedWelcomeMsg = HTMLwelcomeMsg.replace('%data%', bio.welcomeMessage);
-    $('#header').append(formattedWelcomeMsg);
-        
     //build Skills
     if (bio.skills.length > 0) {
-    	$('#header').append(HTMLskillsStart);  
+    	$('#skills-row').append(HTMLskillsStart);  
       for (var skill in bio.skills) {
       	var formattedSkills = HTMLskills.replace('%data%', bio.skills[skill]);	  
     	  $('#skills').append(formattedSkills);
